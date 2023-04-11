@@ -1,4 +1,4 @@
-> Power BI report file (.pbix) parser implemented in Rust. Extract report settings, page structure, and visuals.
+# pbix
 
 pbix is a crate that lets you parse and extract metadata from Power BI report files (`.pbix`).
 
@@ -41,6 +41,6 @@ You can enable this feature by including it in your `Cargo.toml`: no extra confi
 pbix = { version = ..., features = ["rayon"] }
 ```
 
-> Basic testing on a Power BI report sourced from Microsoft's examples indicated a ~15% improvement in parsing time when using this feature.
+*Basic testing on a Power BI report sourced from Microsoft's examples indicated a ~15% improvement in parsing time when using this feature.*
 
 [rayon]: https://crates.io/crates/rayon
