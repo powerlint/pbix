@@ -1,0 +1,28 @@
+[package]
+name = "pbix"
+version = "0.1.0"
+edition = "2021"
+authors = ["Luke Carr <me+oss@carr.sh>"]
+description = "Parsing library for Power BI report files (.pbix)"
+documentation = "https://github.com/powerlint/pbix/"
+homepage = "https://github.com/powerlint/pbix/"
+repository = "https://github.com/powerlint/pbix/"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+exclude = ["**/*.pbix"]
+
+[dependencies]
+rayon = { version = "1.7", optional = true }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+zip = "0.6"
+
+[dev-dependencies]
+criterion = "0.4"
+
+[features]
+rayon = ["dep:rayon"]
+
+[[bench]]
+name = "parse"
+harness = false
