@@ -4,7 +4,6 @@ version = "0.1.0"
 edition = "2021"
 authors = ["Luke Carr <me+oss@carr.sh>"]
 description = "Parsing library for Power BI report files (.pbix)"
-documentation = "https://github.com/powerlint/pbix/"
 homepage = "https://github.com/powerlint/pbix/"
 repository = "https://github.com/powerlint/pbix/"
 license = "MIT OR Apache-2.0"
